@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title YAK YAK
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='script.js')
+    link(href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href='main.css')
+  body
+    header
+      h1 YAK YAK
+    div.container
+      //- h2#instructions Choose a username
+      div.container-input
+        input(type='text' placeholder='Choose a Username')#pseudoInput
+        button#pseudoSet Submit
+        div#chatEntries
+        div#chatControls
+          input(type='text'  placeholder='Message')#messageInput
+          button#submit Send
+        
+        
+    
